@@ -3,7 +3,18 @@
   "name": "ad blocker",
   "description": "ad blocker by seaotter6382",
   "version": "0.1.1",
+  "host_permissions": ["<all_urls>"],
+  "permissions": [
+      "scripting"
+  ],
   "action": {
     "default_popup": "index.html"
-  }
+  },
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+    }
+  ]
 }
