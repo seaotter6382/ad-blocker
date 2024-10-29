@@ -8,7 +8,7 @@ read the script.js file for more info
 
 if you want to, you could change the ads tabel to be something else, example:
 
-`js
+`
 const ads = [
     'any html element',
     'div.cool',
